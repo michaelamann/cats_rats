@@ -13,7 +13,8 @@ library(knitr)
 opts_chunk$set(tidy.opts=list(width.cutoff=60),tidy=TRUE)
 ```
 
-The order of events will be: 1. Cats and rats will reproduce
+The order of events will be:
+1. Cats and rats will reproduce
 2. Cats will be fed the rats
 3. The cats will be skinned
 4. Repeat for a year unless the cats or rats populations reach zero
