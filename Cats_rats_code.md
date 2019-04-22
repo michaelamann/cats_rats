@@ -11,10 +11,12 @@ library(knitr)
 
 ``` r
 opts_chunk$set(tidy.opts=list(width.cutoff=60),tidy=TRUE)
-knitr::opts_chunk$set(fig.width = 3, fig.height=2) 
 ```
 
-The order of events will be: 1. Cats and rats will reproduce 2. Cats will be fed the rats 3. The cats will be skinned 4. Repeat for a year unless the cats or rats populations reach zero
+The order of events will be: 1. Cats and rats will reproduce
+2. Cats will be fed the rats
+3. The cats will be skinned
+4. Repeat for a year unless the cats or rats populations reach zero
 
 This first block will assume 5000 cats are skinned a day
 
