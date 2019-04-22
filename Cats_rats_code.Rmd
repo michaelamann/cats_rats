@@ -3,6 +3,8 @@ title: "Cats and Rats"
 author: "Michael Mann"
 date: "4/17/2019"
 output: html_document
+fig_width: 3
+fig_height: 3 
 ---
 
 The order of events will be:
@@ -13,6 +15,7 @@ The order of events will be:
   
 This first block will assume 5000 cats are skinned a day
 ```{r model_1st, echo=TRUE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(fig.width = 3, fig.height=2) 
 library(tidyverse) #load this package for plotting and manipulating data
 total_days <- 3650 # going to simluate the model for 10 decades
 
