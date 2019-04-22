@@ -75,6 +75,7 @@ Here is the full plot where you can see the rats run amock
     ggplot(aes(x = time, y = Individuals, color = Variables)) + geom_line() + theme_bw() +
   #reformat y axis
   scale_y_continuous(labels = function(x) format(x, big.mark = ",", scientific = F)) + 
+  scale_color_discrete(labels = c("Cats", "Rats", "Skinned Cats"))+ 
   #add xlabel
   xlab("Days")
 ```
@@ -88,6 +89,7 @@ We can limit the y axis so we can see the cat population dwindle to zero.
     ggplot(aes(x = time, y = Individuals, color = Variables)) + geom_line() + theme_bw() + 
     #reformat y axis
   scale_y_continuous(labels = function(x) format(x, big.mark = ",", scientific = F), limits = c(0, 1000000)) +
+    scale_color_discrete(labels = c("Cats", "Rats", "Skinned Cats")) + 
   #add xlabel
 xlab("Days")
 
@@ -152,6 +154,7 @@ Now the rat population crashes.
     ggplot(aes(x = time, y = Individuals, color = Variables)) + geom_line() + theme_bw() +
   #reformat y axis
   scale_y_continuous(labels = function(x) format(x, big.mark = ",", scientific = FALSE)) + 
+    scale_color_discrete(labels = c("Cats", "Rats", "Skinned Cats"))+ 
   #change x axis
   xlab("Days")
 

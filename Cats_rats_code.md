@@ -74,7 +74,8 @@ gather(key = "Variables", value = "Individuals", -time) %>% ggplot(aes(x = time,
     y = Individuals, color = Variables)) + geom_line() + theme_bw() + 
     # reformat y axis
 scale_y_continuous(labels = function(x) format(x, big.mark = ",", 
-    scientific = F)) + # add xlabel
+    scientific = F)) + scale_color_discrete(labels = c("Cats", 
+    "Rats", "Skinned Cats")) + # add xlabel
 xlab("Days")
 ```
 
@@ -88,7 +89,8 @@ gather(key = "Variables", value = "Individuals", -time) %>% ggplot(aes(x = time,
     y = Individuals, color = Variables)) + geom_line() + theme_bw() + 
     # reformat y axis
 scale_y_continuous(labels = function(x) format(x, big.mark = ",", 
-    scientific = F), limits = c(0, 1e+06)) + # add xlabel
+    scientific = F), limits = c(0, 1e+06)) + scale_color_discrete(labels = c("Cats", 
+    "Rats", "Skinned Cats")) + # add xlabel
 xlab("Days")
 ```
 
@@ -149,7 +151,8 @@ model_output %>% gather(key = "Variables", value = "Individuals",
     -time) %>% ggplot(aes(x = time, y = Individuals, color = Variables)) + 
     geom_line() + theme_bw() + # reformat y axis
 scale_y_continuous(labels = function(x) format(x, big.mark = ",", 
-    scientific = FALSE)) + # change x axis
+    scientific = FALSE)) + scale_color_discrete(labels = c("Cats", 
+    "Rats", "Skinned Cats")) + # change x axis
 xlab("Days")
 ```
 
