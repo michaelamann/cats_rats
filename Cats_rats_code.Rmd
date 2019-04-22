@@ -2,7 +2,7 @@
 title: "Cats and Rats"
 author: "Michael Mann"
 date: "4/17/2019"
-output: html_document
+output: pdf_document
 fig_width: 3
 fig_height: 3 
 ---
