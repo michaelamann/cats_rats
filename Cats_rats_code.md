@@ -10,8 +10,36 @@ library(knitr)
     ## Warning: package 'knitr' was built under R version 3.4.4
 
 ``` r
-opts_chunk$set(tidy.opts=list(width.cutoff=60),tidy=TRUE)
+opts_chunk$set(tidy.opts=list(width.cutoff=60),tidy=TRUE) #to make it wrap around on github
+library(tidyverse) #load this package for plotting and manipulating data
 ```
+
+    ## ── Attaching packages ──────────────────────────────────────────────────────────────────────────── tidyverse 1.2.1 ──
+
+    ## ✔ ggplot2 3.1.0       ✔ purrr   0.3.2  
+    ## ✔ tibble  2.1.1       ✔ dplyr   0.8.0.1
+    ## ✔ tidyr   0.8.3       ✔ stringr 1.4.0  
+    ## ✔ readr   1.3.1       ✔ forcats 0.4.0
+
+    ## Warning: package 'ggplot2' was built under R version 3.4.4
+
+    ## Warning: package 'tibble' was built under R version 3.4.4
+
+    ## Warning: package 'tidyr' was built under R version 3.4.4
+
+    ## Warning: package 'readr' was built under R version 3.4.4
+
+    ## Warning: package 'purrr' was built under R version 3.4.4
+
+    ## Warning: package 'dplyr' was built under R version 3.4.4
+
+    ## Warning: package 'stringr' was built under R version 3.4.4
+
+    ## Warning: package 'forcats' was built under R version 3.4.4
+
+    ## ── Conflicts ─────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+    ## ✖ dplyr::filter() masks stats::filter()
+    ## ✖ dplyr::lag()    masks stats::lag()
 
 The order of events will be:
 1. Cats and rats will reproduce
@@ -22,7 +50,6 @@ The order of events will be:
 This first block will assume 5000 cats are skinned a day
 
 ``` r
-library(tidyverse)  #load this package for plotting and manipulating data
 total_days <- 3650  # going to simluate the model for 10 decades
 
 # pre-allocate vectors
